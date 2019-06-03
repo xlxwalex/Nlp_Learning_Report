@@ -1,0 +1,10 @@
+# Code
+
+基于Sentiment Analysis on Movie Reviews数据集，通过Pytorch实现的CBoW模型以及Skip-gram模型训练得到的用于Embedding的词向量
+
+
+# 主要内容
+
+基于深度学习的文本分类往往会有更好的分类性能。本次任务针对影评数据进行文本情感多分类，首先通过词嵌入将文本以词为细粒度做分布式表示，用到了随机初始化、GloVe 预训练的词向量进行初始化以及Word2Vec的CBoW和Skip-gram两个模型。其次学习了CNN以及RNN在本文上的应用TextCNN以及TextRNN，并了解了其网络结构和模型的一些细节以及调参的方法。
+
+最后利用学习得到的理论知识进行了实验，设计了四组对照实验，分别探究了两种不同的词嵌入方法、不同的词向量维度、是否使用Dropout以及拓展探究了Word2Vec的两种模型CBoW及Skip-gram做词嵌入对分类性能的影响，并做了一组探究TextCNN以及TextRNN的分类性能的探究性实验。
